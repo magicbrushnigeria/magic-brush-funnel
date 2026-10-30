@@ -29,11 +29,7 @@ a {
     margin: 0 auto;
 }
 
-
-/* =========================
-   TOP BAR
-========================= */
-
+/* TOP BAR */
 .top-bar {
     background: #111111;
     color: #ffffff;
@@ -43,19 +39,40 @@ a {
     font-weight: 700;
 }
 
+/* COUNTDOWN TIMER */
+.countdown-section {
+    background: #fff3e0;
+    text-align: center;
+    padding: 18px 15px;
+}
 
-/* =========================
-   GENERAL SECTIONS
-========================= */
+.countdown-title {
+    color: #9a3412;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
 
+#countdown {
+    color: #d62828;
+    font-size: clamp(32px, 6vw, 42px);
+    line-height: 1.25;
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-variant-numeric: tabular-nums;
+}
+
+.countdown-section small {
+    color: #666666;
+    font-size: 12px;
+}
+
+/* GENERAL SECTIONS */
 section {
     padding: 80px 0;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     line-height: 1.2;
 }
 
@@ -83,11 +100,7 @@ h2 {
     font-size: 17px;
 }
 
-
-/* =========================
-   BUTTON
-========================= */
-
+/* BUTTONS */
 .primary-btn {
     display: inline-block;
     background: #e63946;
@@ -107,11 +120,7 @@ h2 {
     transform: translateY(-2px);
 }
 
-
-/* =========================
-   HERO
-========================= */
-
+/* HERO SECTION */
 .hero {
     background: linear-gradient(180deg, #fff7f5 0%, #ffffff 100%);
     text-align: center;
@@ -155,11 +164,7 @@ h2 {
     font-size: 13px;
 }
 
-
-/* =========================
-   PROBLEM
-========================= */
-
+/* PROBLEM SECTION */
 .problem-section {
     background: #f7f7f7;
 }
@@ -193,11 +198,7 @@ h2 {
     color: #666666;
 }
 
-
-/* =========================
-   SOLUTION
-========================= */
-
+/* SOLUTION SECTION */
 .solution-section {
     text-align: center;
 }
@@ -212,11 +213,7 @@ h2 {
     margin-top: 10px;
 }
 
-
-/* =========================
-   VIDEO
-========================= */
-
+/* VIDEO SECTIONS */
 .video-section,
 .demonstration-section {
     background: #111111;
@@ -248,11 +245,7 @@ h2 {
     height: auto;
 }
 
-
-/* =========================
-   FEATURES
-========================= */
-
+/* FEATURES SECTION */
 .features-section {
     text-align: center;
 }
@@ -287,11 +280,7 @@ h2 {
     color: #666666;
 }
 
-
-/* =========================
-   SHOWCASE
-========================= */
-
+/* SHOWCASE SECTION */
 .showcase-section {
     background: #f7f7f7;
     text-align: center;
@@ -303,11 +292,7 @@ h2 {
     border-radius: 18px;
 }
 
-
-/* =========================
-   BENEFITS
-========================= */
-
+/* BENEFITS SECTION */
 .benefits-section {
     text-align: center;
 }
@@ -351,11 +336,27 @@ h2 {
     color: #666666;
 }
 
+/* CUSTOMER REVIEWS */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 900px;
+    margin: 35px auto 0;
+}
 
-/* =========================
-   OFFER
-========================= */
+.review-card {
+    overflow: hidden;
+    border-radius: 14px;
+    background: #ffffff;
+}
 
+.review-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* OFFER SECTION */
 .offer-section {
     background: #fff7f5;
     text-align: center;
@@ -431,11 +432,7 @@ h2 {
     margin-top: 10px;
 }
 
-
-/* =========================
-   REASONS
-========================= */
-
+/* MORE BENEFITS */
 .reasons-section {
     text-align: center;
 }
@@ -469,11 +466,7 @@ h2 {
     color: #666666;
 }
 
-
-/* =========================
-   CTA
-========================= */
-
+/* CTA SECTION */
 .cta-section {
     background: #e63946;
     color: #ffffff;
@@ -500,11 +493,7 @@ h2 {
     background: #eeeeee;
 }
 
-
-/* =========================
-   FAQ
-========================= */
-
+/* FAQ SECTION */
 .faq-section {
     background: #f7f7f7;
 }
@@ -532,11 +521,7 @@ h2 {
     margin-top: 15px;
 }
 
-
-/* =========================
-   PLEASE NOTE
-========================= */
-
+/* PLEASE NOTE SECTION */
 .note-section {
     background: #fff4d6;
     padding: 60px 0;
@@ -568,11 +553,11 @@ h2 {
     line-height: 1.6;
 }
 
+.note-box .primary-btn {
+    margin-top: 5px;
+}
 
-/* =========================
-   URGENCY
-========================= */
-
+/* URGENCY SECTION */
 .urgency-section {
     background: #111111;
     color: #ffffff;
@@ -588,11 +573,7 @@ h2 {
     margin-bottom: 25px;
 }
 
-
-/* =========================
-   ORDER FORM
-========================= */
-
+/* ORDER FORM */
 .order-section {
     background: #f7f7f7;
 }
@@ -640,11 +621,7 @@ h2 {
     margin-top: 5px;
 }
 
-
-/* =========================
-   FINAL SECTION
-========================= */
-
+/* FINAL SECTION */
 .final-section {
     text-align: center;
 }
@@ -661,11 +638,7 @@ h2 {
     margin-bottom: 25px;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
-
+/* FOOTER */
 footer {
     background: #111111;
     color: #aaaaaa;
@@ -674,11 +647,71 @@ footer {
     font-size: 14px;
 }
 
+/* SAMPLE ACTIVITY NOTIFICATION */
+.order-notification {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 320px;
+    max-width: calc(100vw - 30px);
+    padding: 15px;
+    background: #ffffff;
+    color: #171717;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: opacity 0.25s ease,
+                transform 0.25s ease,
+                visibility 0.25s ease;
+}
 
-/* =========================
-   MOBILE
-========================= */
+.order-notification.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
 
+.order-notification[hidden] {
+    display: none;
+}
+
+.notification-icon {
+    flex: 0 0 auto;
+    font-size: 30px;
+}
+
+.notification-content {
+    min-width: 0;
+}
+
+.notification-content strong {
+    display: block;
+    color: #15803d;
+    font-size: 14px;
+}
+
+.notification-content p {
+    margin: 4px 0;
+    color: #333333;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.notification-content small {
+    display: block;
+    color: #777777;
+    font-size: 10px;
+    line-height: 1.35;
+}
+
+/* TABLET RESPONSIVENESS */
 @media (max-width: 800px) {
 
     section {
@@ -724,14 +757,9 @@ footer {
     #orderForm {
         padding: 25px 20px;
     }
-
 }
 
-
-/* =========================
-   SMALL MOBILE
-========================= */
-
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 480px) {
 
     .top-bar {
@@ -769,4 +797,24 @@ footer {
         font-size: 26px;
     }
 
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .order-notification {
+        left: 10px;
+        bottom: 10px;
+        width: calc(100vw - 20px);
+    }
+}
+
+/* REDUCED MOTION ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
 }
