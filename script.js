@@ -68,20 +68,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* ILLUSTRATIVE SAMPLE ACTIVITY — NOT REAL CUSTOMER ORDERS */
     const sampleOrders = [
-        { name: "Aisha Bello", state: "Lagos", quantity: "1 Magic Brush" },
-        { name: "Tunde Adeyemi", state: "Oyo", quantity: "2 Magic Brushes" },
-        { name: "Fatima Ibrahim", state: "Kano", quantity: "1 Magic Brush" },
-        { name: "Chinedu Okafor", state: "Anambra", quantity: "3 Magic Brushes" },
-        { name: "Mariam Abdullahi", state: "Kwara", quantity: "2 Magic Brushes" },
-        { name: "Emeka Nwosu", state: "Enugu", quantity: "1 Magic Brush" },
-        { name: "Zainab Musa", state: "Kaduna", quantity: "3 Magic Brushes" },
-        { name: "Samuel Johnson", state: "Rivers", quantity: "2 Magic Brushes" },
-        { name: "Blessing Eze", state: "Abia", quantity: "1 Magic Brush" },
-        { name: "Abdulrahman Sani", state: "Niger", quantity: "2 Magic Brushes" },
-        { name: "Grace Oladipo", state: "Osun", quantity: "3 Magic Brushes" },
-        { name: "Ibrahim Sule", state: "Abuja", quantity: "1 Magic Brush" },
-        { name: "Ngozi Okeke", state: "Imo", quantity: "2 Magic Brushes" },
-        { name: "Bashir Usman", state: "Plateau", quantity: "1 Magic Brush" }
+        { name: "Aisha Bello", state: "Lagos", quantity: "1 Magic Brush", time: "5 minutes ago" },
+        { name: "Tunde Adeyemi", state: "Oyo", quantity: "2 Magic Brushes", time: "10 minutes ago" },
+        { name: "Fatima Ibrahim", state: "Kano", quantity: "1 Magic Brush", time: "15 minutes ago" },
+        { name: "Chinedu Okafor", state: "Anambra", quantity: "3 Magic Brushes", time: "20 minutes ago" },
+        { name: "Mariam Abdullahi", state: "Kwara", quantity: "2 Magic Brushes", time: "8 minutes ago" },
+        { name: "Emeka Nwosu", state: "Enugu", quantity: "1 Magic Brush", time: "12 minutes ago" },
+        { name: "Zainab Musa", state: "Kaduna", quantity: "3 Magic Brushes", time: "25 minutes ago" },
+        { name: "Samuel Johnson", state: "Rivers", quantity: "2 Magic Brushes", time: "3 minutes ago" },
+        { name: "Blessing Eze", state: "Abia", quantity: "1 Magic Brush", time: "18 minutes ago" },
+        { name: "Abdulrahman Sani", state: "Niger", quantity: "2 Magic Brushes", time: "30 minutes ago" },
+        { name: "Grace Oladipo", state: "Osun", quantity: "3 Magic Brushes", time: "7 minutes ago" },
+        { name: "Ibrahim Sule", state: "Abuja", quantity: "1 Magic Brush", time: "22 minutes ago" },
+        { name: "Ngozi Okeke", state: "Imo", quantity: "2 Magic Brushes", time: "14 minutes ago" },
+        { name: "Bashir Usman", state: "Plateau", quantity: "1 Magic Brush", time: "27 minutes ago" }
     ];
 
     const notification = document.getElementById("orderNotification");
@@ -97,7 +97,8 @@ document.addEventListener("DOMContentLoaded", function () {
             notificationText.textContent =
                 order.name + " — " +
                 order.state + " — " +
-                order.quantity;
+                order.quantity + " — " +
+                order.time;
 
             notification.hidden = false;
 
@@ -120,7 +121,9 @@ document.addEventListener("DOMContentLoaded", function () {
             orderIndex = (orderIndex + 1) % sampleOrders.length;
         }
 
+        /* Show first notification after 20 seconds */
         setInterval(showSampleNotification, 20000);
     }
 
 });
+
